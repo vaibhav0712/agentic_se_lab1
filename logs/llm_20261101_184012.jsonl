@@ -1,0 +1,2 @@
+{"timestamp": "2026-11-01T17:40:15.557387+00:00", "type": "embedding", "model": "kiconnect.qwen3-embedding-8b", "n_texts": 99, "cost_usd": 0.0, "duration_s": 2.524}
+{"timestamp": "2026-11-01T17:40:15.642636+00:00", "type": "embedding", "model": "kiconnect.qwen3-embedding-8b", "n_texts": 1, "cost_usd": 0.0, "duration_s": 0.071}
