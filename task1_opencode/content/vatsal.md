@@ -1,8 +1,8 @@
 # Vatsal
 
 ## Study background
-Completed Bachelor's in Computer Engineering from CHARUSAT University 
-Master's in Computer Science from Paderborn University
+Completed Bachelor's in Computer Engineering from CHARUSAT University and
+Currently pursuing Master's in Computer Science from Paderborn University
 
 ## Interests
 Artificial Intelligence, Anime, Volleyball, Sightseeing and Dramas.
