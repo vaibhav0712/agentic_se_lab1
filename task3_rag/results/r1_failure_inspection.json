@@ -1,0 +1,136 @@
+[
+  {
+    "id": "dev002",
+    "category": "paraphrase",
+    "question": "Our logs say that the part that holds back messages until a later point in time has too many waiting jobs and refuses more. What is the name of this error?",
+    "ground_truth": "PQ-E3246 (SCHEDULER_WORK_QUEUE_FULL)",
+    "relevant_doc_groups": [
+      [
+        "d0319"
+      ]
+    ],
+    "r1_top5": [
+      "d0159",
+      "d0168",
+      "d0393",
+      "d0210",
+      "d0760"
+    ],
+    "r1_answer": "**cloudcat:** Since yesterday our cluster logs `partitioner: codec mismatch` several times per minute. In our case the load was simply too high.",
+    "r4_top5": [
+      "d0220",
+      "d0406",
+      "d0182",
+      "d0336",
+      "d0589"
+    ]
+  },
+  {
+    "id": "dev003",
+    "category": "paraphrase",
+    "question": "Which error code does PaderQueue report when new clients are turned away by the component that decides which consumer reads which partition?",
+    "ground_truth": "PQ-E1565 (COORDINATOR_CONNECTION_LIMIT_REACHED)",
+    "relevant_doc_groups": [
+      [
+        "d0759"
+      ]
+    ],
+    "r1_top5": [
+      "d0870",
+      "d0507",
+      "d0642",
+      "d0192",
+      "d0667"
+    ],
+    "r1_answer": "- New error code PQ-E2273 (COORDINATOR_COMPONENT_DISABLED) with a clearer log message. - New error code PQ-E1547 (PARTITIONER_COMPONENT_DISABLED) with a clearer log message.",
+    "r4_top5": [
+      "d0870",
+      "d0805",
+      "d0406",
+      "d0642",
+      "d0604"
+    ]
+  },
+  {
+    "id": "dev004",
+    "category": "paraphrase",
+    "question": "Which setting controls how many times the mechanism that parks messages nobody could process tries again before it gives up?",
+    "ground_truth": "The setting `dlq.max_retries`.",
+    "relevant_doc_groups": [
+      [
+        "d0032",
+        "d0303"
+      ]
+    ],
+    "r1_top5": [
+      "d0805",
+      "d0362",
+      "d0801",
+      "d0700",
+      "d0507"
+    ],
+    "r1_answer": "During the incident, `user-activity` could not process messages reliably. - New option `acktracker.max_retries`: maximum number of retry attempts of the acknowledgement tracker that records which messages consumers have confirmed before an operation is reported as failed.",
+    "r4_top5": [
+      "d0793",
+      "d0810",
+      "d0225",
+      "d0805",
+      "d0749"
+    ]
+  },
+  {
+    "id": "dev015",
+    "category": "multi-hop",
+    "question": "Which permanent fix does the documentation recommend for the error that caused incident INC-2024-183?",
+    "ground_truth": "The incident was caused by PQ-E4663. Fix: Throttling protects the node. Add capacity or reduce load. As a last resort, raise `coordinator.threshold_percent`.",
+    "relevant_doc_groups": [
+      [
+        "d0778"
+      ],
+      [
+        "d0437"
+      ]
+    ],
+    "r1_top5": [
+      "d0778",
+      "d0048",
+      "d0148",
+      "d0417",
+      "d0515"
+    ],
+    "r1_answer": "Postmortem INC-2024-183: checkout-service degraded - The workaround is not a permanent fix.",
+    "r4_top5": [
+      "d0932",
+      "d0772",
+      "d0377",
+      "d0867",
+      "d0129"
+    ]
+  },
+  {
+    "id": "dev019",
+    "category": "paraphrase",
+    "question": "Which error code does PaderQueue report when the part that holds back messages until a later point in time keeps trying and eventually stops trying?",
+    "ground_truth": "PQ-E4426 (SCHEDULER_RETRIES_EXHAUSTED)",
+    "relevant_doc_groups": [
+      [
+        "d0020"
+      ]
+    ],
+    "r1_top5": [
+      "d0642",
+      "d0192",
+      "d0507",
+      "d0870",
+      "d0667"
+    ],
+    "r1_answer": "- New option `snapshotter.batch_size`: number of messages the snapshotter that creates point-in-time backups of queues processes together in one batch. - New error code PQ-E1163 (SNAPSHOTTER_CONNECTION_LIMIT_REACHED) with a clearer log message.",
+    "r4_top5": [
+      "d0642",
+      "d0406",
+      "d0870",
+      "d0700",
+      "d0604"
+    ]
+  }
+]
