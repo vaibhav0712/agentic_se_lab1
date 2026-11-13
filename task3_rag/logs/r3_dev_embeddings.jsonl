@@ -1,0 +1,6 @@
+{"timestamp": "2026-11-12T21:40:50.512685+00:00", "type": "embedding", "model": "kiconnect.qwen3-embedding-8b", "n_texts": 3198, "cost_usd": 0.0, "duration_s": 59.251}
+{"timestamp": "2026-11-12T21:41:01.921790+00:00", "type": "embedding", "model": "kiconnect.qwen3-embedding-8b", "n_texts": 150, "cost_usd": 0.0, "duration_s": 2.609}
+{"timestamp": "2026-11-12T21:41:50.532772+00:00", "type": "embedding", "model": "kiconnect.qwen3-embedding-8b", "n_texts": 1352, "cost_usd": 0.0, "duration_s": 34.108}
+{"timestamp": "2026-11-12T21:41:56.943816+00:00", "type": "embedding", "model": "kiconnect.qwen3-embedding-8b", "n_texts": 150, "cost_usd": 0.0, "duration_s": 2.204}
+{"timestamp": "2026-11-12T21:42:28.173920+00:00", "type": "embedding", "model": "kiconnect.qwen3-embedding-8b", "n_texts": 965, "cost_usd": 0.0, "duration_s": 20.566}
+{"timestamp": "2026-11-12T21:42:34.387555+00:00", "type": "embedding", "model": "kiconnect.qwen3-embedding-8b", "n_texts": 150, "cost_usd": 0.0, "duration_s": 3.019}
