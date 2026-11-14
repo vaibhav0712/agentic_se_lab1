@@ -1,9 +1,5 @@
 # Vaibhav
 
-<!-- Copy this file to <firstname>.md (lowercase), e.g. anna.md, and fill it in.
-     Put your picture into images/<firstname>.jpg (or .png/.svg/.webp).
-     Photo, avatar or drawing - your choice. Resize it to about 400 x 400 pixels. -->
-
 ## Study background
 <!-- e.g. M.Sc. Computer Science, 1st semester, B.Sc. from ... -->
 Master's in Computer Science from Paderborn University
